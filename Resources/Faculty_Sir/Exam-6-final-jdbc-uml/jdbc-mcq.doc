@@ -10,8 +10,7 @@ Ans. a b
 
 2  Analyze the following code:
      ResultSet resultSet = statement.executeQuery
-       ("select firstName, mi, lastName from Student where lastName "
-         + " = 'Smith'");
+       ("select firstName, mi, lastName from Student where lastName " + " = 'Smith'");
      System.out.println(resultSet.getString(1));
 A. If the SQL SELECT statement returns no result, resultSet is null. 
 B. resultSet.getString(1) returns the firstName field in the result set. 
@@ -41,6 +40,7 @@ C. database URL and product name
 D. JDBC driver name and version 
 Ans. a
 
+
 6  Which of the following statements are true?
 A. You may load multiple JDBC drivers in a program. 
 B. You may create multiple connections to a database. 
@@ -53,7 +53,7 @@ A. DriverManager
 B. Connection 
 C. Statement 
 D. ResultSet 
-Ans. b c d
+Ans. a b c d
 
 8  To connect to a local MySQL database named test, use 
 A. Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/test"); 
@@ -89,6 +89,9 @@ A. in the standard Java library bundled with JDK
 B. in a JAR file classes12.jar 
 C. in a JAR file mysqljdbc.jar 
 Ans. c
+
+
+
 13  Result set meta data are retrieved through ____________.
 A. a PreparedStatement object 
 B. a ResultSet Object 
@@ -181,6 +184,9 @@ B. stmt.add("insert into T values (100, 'Smith')");
 C. stmt.add('insert into T values (100, 'Smith')'); 
 D. stmt.addBatch('insert into T values (100, 'Smith')'); 
 Ans. a
+
+
+
 
 
 26  To obtain a scrollable or updateable result set, you must first create a statement using the following syntax:
